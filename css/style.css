@@ -1,0 +1,103 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+  max-width: max-content;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+:root{
+  --color-1:#e1e1e6
+  --color-2:#fc306f
+  --color-3:
+}
+.container-bg {
+  background: url(../img/icons/Mobile.svg) center;
+  height: 100vh;
+}
+.container {
+  max-width: 260px;
+  margin: 0 auto 0 auto;
+  display: grid;
+  place-items: center;
+}
+.images-people-me img {
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
+}
+.images-person {
+  margin-top: 80px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.image-people-details {
+  position: absolute;
+  z-index: 9999;
+  top: -5px;
+  left: -25;
+}
+.card-content h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #e1e1e6;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.card-content a {
+  font-size: 1rem;
+  color: #c4c4cc;
+  margin: 0 auto;
+  font-weight: normal;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: 0.2s;
+  padding: 8px 0;
+}
+
+.card-content a::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/icons/github.svg");
+}
+
+.card-content a:hover {
+  color: #fc306f;
+}
+
+.card-content p {
+  font-size: 0.875rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #e1e1e6;
+  margin-bottom: 4rem;
+}
+
+.card-socials-itens {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.card-socials-itens li a img {
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.card-socials-itens li a img:hover {
+  border-color: #fc306f;
+}
